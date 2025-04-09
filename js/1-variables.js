@@ -26,4 +26,5 @@ const numero2 = parseInt(prompt('Ingrese segundo número: '))
 // const numero1 = 10
 // const numero2 = 12
 const resultado = numero1 + numero2;
-document.writeln("<br>La suma de los dos numeros ingresados es: " + resultado);
+// document.writeln("<br>La suma de los dos numeros ingresados es: " + resultado);
+document.writeln("<br>La suma de los dos numeros ingresados es: " + (numero1+numero2));
