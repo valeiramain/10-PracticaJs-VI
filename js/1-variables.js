@@ -19,9 +19,9 @@ document.writeln('<br>El link de liveServer es: '+url)
 // una variable definida como CONST no puede cambiar de valor
 
 // Sumar de 2 numeros - definir con constante
-let numero1, numero2, resultado
+// let numero1, numero2, resultado
 
-numero1 = 10
-numero2 = 12
-resultado = numero1 + numero2
+const numero1 = 10
+const numero2 = 12
+const resultado = numero1 + numero2
 document.writeln("<br>La suma de los dos numeros ingresados es: "+resultado)
