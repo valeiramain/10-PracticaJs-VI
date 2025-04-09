@@ -28,3 +28,58 @@ const numero2 = parseInt(prompt('Ingrese segundo número: '))
 const resultado = numero1 + numero2;
 // document.writeln("<br>La suma de los dos numeros ingresados es: " + resultado);
 document.writeln("<br>La suma de los dos numeros ingresados es: " + (numero1+numero2));
+
+//=========================
+//TIPOS DE DATOS: primitivos
+//=========================
+//string
+const nombreUsuario = 'Valentina Iramain';
+const producto = "Paraguas";
+const saludo = `Hola Mundo`;
+
+//number
+const edad = 30;
+const precio = 3000.50;
+const negativo =-60;
+
+
+//boolean
+const esMayorDeEdad = true;
+const encendido = false;
+
+//null este valor indica VACIO
+const informacion=null;
+
+//undefined
+let datosExtras;
+
+
+//=========================
+//TIPOS DE DATOS: especiales
+//=========================
+//objeto con notación literal
+const funko = {
+    nombre:'iroman',
+    numero:'xs23456',
+    precio: 30.5
+}
+
+//array
+const colores = ['azul','amarillo','rojo']
+
+//symbol identificadores unicos (dni, legajo, etc)
+const alumno = Symbol('legajo')
+
+
+console.log(nombreUsuario);
+console.log(producto);
+console.log(saludo)
+console.log(edad);
+console.log(precio);
+console.log(negativo);
+console.log(informacion);
+console.log(datosExtras);
+console.log(funko);
+console.log(colores);
+console.log(alumno);
+console.log(Number.MAX_SAFE_INTEGER)
