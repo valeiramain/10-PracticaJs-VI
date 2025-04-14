@@ -19,18 +19,32 @@
 const opcion = parseInt(prompt("Ingrese una opción (1-Consultar el saldo, 2-Ingresar dinero, 3-Extraer dinero): "));
 let saldo = 10000;
 
-switch(opcion){
-    case 1: 
-        document.writeln("Su saldo es: $"+saldo);
+switch (opcion) {
+    case 1:
+    case "1":
+    case "saldo":
+        document.writeln("Su saldo es: $" + saldo);
         break;
     case 2:
         const deposito = Number(prompt("Ingresa el monto a depositar: $"));
         console.log(deposito);
         saldo = saldo + deposito;
         // saldo += deposito;
-        document.writeln("</br>Depositaste $"+deposito+", tu saldo actual es $"+saldo);
-        document.writeln(`<br>Depositaste ${deposito}, tu saldo es ${saldo}`)
+        document.writeln("</br>Depositaste $" + deposito + ", tu saldo actual es $" + saldo);
+        document.writeln(`<br>Depositaste $${deposito}, tu saldo es $${saldo}`);
+        break;
     case 3:
-        
+        // preguntar si el monto a extraer es menor al saldo
+        const extraccion = Number(prompt("Ingresa el monto a extraer:"));
+        if (extraccion <= saldo) {
+            saldo = saldo - extraccion;
+            // saldo -= extraccion;
+            document.writeln(`<br>Extraíste $${extraccion}, tu saldo es $${saldo}`);
+        } else {
+            document.writeln("Saldo insuficiente")
+        }
+        break;
+
     default:
+        document.writeln("Ingresaste una opción inválida")
 }
