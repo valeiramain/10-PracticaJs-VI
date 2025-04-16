@@ -3,14 +3,13 @@
 
 //restringir la cantidad de caracteres que ingresa el usuario
 
-const frase = prompt("Ingrese una frase de hasta 5 caracteres: ").toLowerCase();
+const frase = prompt("Ingrese una frase: ").toLowerCase();
 
 console.log(frase)
 console.log(frase.length)
 console.log(frase.toUpperCase())
 console.log(frase.toLowerCase())
 console.log(frase.charAt(0))
-
 if (frase.length <= 5) {
     if (frase.charAt(0) === "a" || frase.charAt(0) === "e" || frase.charAt(0) === "i" || frase.charAt(0) === "o" || frase.charAt(0) === "u") {
         document.writeln(frase.charAt(0))
