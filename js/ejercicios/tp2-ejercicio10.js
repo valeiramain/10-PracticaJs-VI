@@ -6,7 +6,7 @@
 
 const filas = parseInt(prompt("Ingrese número de filas: "))
 const columnas = parseInt(prompt("Ingrese número de columnas: "))
-let contenido = 1
+let contenido = filas * columnas
 
 document.writeln(` <table>
         <tbody>`)
@@ -15,7 +15,7 @@ for (let indiceFilas = 1; indiceFilas <= filas; indiceFilas++) {
     document.writeln(`<tr>`)
     for (let indiceColumnas = 1; indiceColumnas <= columnas; indiceColumnas++) {
         document.writeln(`<td>${contenido}</td>`)
-        contenido = contenido + 1
+        contenido = contenido - 1
     }
     document.writeln(`</tr>`)
 }
