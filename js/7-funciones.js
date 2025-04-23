@@ -16,15 +16,25 @@ function sumar(nro1,nro2){
 
 //funciones que retornan un valor
 
-function multiplicar(nro1,nro2){
-    const resultado = nro1 * nro2;
-    // return nro1+nro2;
-    return resultado;
-    // no se puede escribir codigo luego del return
-}
+// function multiplicar(nro1,nro2){
+//     const resultado = nro1 * nro2;
+//     // return nro1+nro2;
+//     return resultado;
+//     // no se puede escribir codigo luego del return
+// }
 
+//arrow functions
+const multiplicar = (nro1,nro2) => {return nro1 * nro2}
+// const multiplicar = (nro1,nro2) => {return  document.writeln(`<p>El resultado es: ${nro1+nro2}</p>`)}
 
+// const saludarMundo = () =>{
+//     document.writeln(`<p>Hola Mundo 2 🌐</p>`)
+// }
 
+const saludarMundo = () => document.writeln(`<p>Hola Mundo 2 🌐</p>`)
+
+// const saludarPersona = nombrePersona => document.writeln(`<p>Hola ${nombrePersona} 🌐</p>`)
+const saludarPersona = (nombrePersona="anonimus") => document.writeln(`<p>Hola ${nombrePersona} 🌐</p>`)
 
 //invocar o llamar una funcion
 saludar()
@@ -41,3 +51,10 @@ console.log(multiplicar(numero1,numero2))
 const resultado = multiplicar(numero1,numero2);
 document.writeln(`<P>Multiplicar numero1: ${numero1} * numero2: ${numero2} = ${resultado}</p>`)
 document.writeln(`<P>Multiplicar numero1: ${numero1} * numero2: ${numero2} = ${multiplicar(numero1,numero2)}</p>`)
+
+saludarMundo()
+
+const nombre = prompt("Ingresa tu nombre: ")
+console.log(nombre)
+console.log(nombre.trim())
+saludarPersona(nombre.trim())
