@@ -71,3 +71,40 @@ mostrarFrutas("eliminar un elemento en el medio del array")
 // borrar desde posicion 3 en adelante, todos
 // frutas.splice(3)
 // frutas.splice(3,frutas.length)
+
+
+//metodos mutables e inmutables: modifican o no el array
+document.writeln('<h2>Métodos extras para trabajar con Arrays</h2>')
+
+// frutas.push('🦐')
+//encontrar un elemento en el array find(). dentro de los parentesis va una funcion anonima que se usa una sola vez
+
+// const sandia = frutas.find(function(){})
+// funcion fecha. item representa el contenido del array
+const sandia = frutas.find((item)=> item ==='🍉')
+const sandiaPosition = frutas.findIndex((item)=> item ==='🍉')
+console.log(sandia)
+console.log(sandiaPosition)
+
+const camaron = frutas.find((item)=> item ==='🦐')
+const camaronPosition = frutas.findIndex((item)=> item ==='🦐')
+console.log(camaron)
+console.log(camaronPosition)
+//cuando find() no encuentra devuelve undefined y findeIndex() -1
+
+document.writeln(`<p>Se encontró el Elemento buscado ${sandia}, en la posicion ${sandiaPosition}</p>`)
+document.writeln(`<p>Se encontró el Elemento buscado ${camaron}, en la posicion ${camaronPosition}</p>`)
+
+
+//falsy: "" - null - undefined - NaN  - -1
+if (camaron){
+    document.writeln(`<p>Se encontró el Elemento buscado ${camaron}, en la posicion ${camaronPosition}</p>`)
+} else{
+    document.writeln(`<P>No se encontró el elemento buscado 🦐</P>`)
+}
+
+//operador ternario ?: S PARA CONDICIONAL DOBLE CORTITO
+// (condicion logica) ? 'texto' : 'otro texto'
+
+///     CORREGIR EN CLASE
+// document.writeln(`${(camaron) ? '<p>Se encontró el Elemento buscado'+camaron', en la posicion '+camaronPosition'+'</p>' : `<P>No se encontró el elemento buscado 🦐</P>`})
