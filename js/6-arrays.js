@@ -103,7 +103,7 @@ if (camaron){
     document.writeln(`<P>No se encontró el elemento buscado 🦐</P>`)
 }
 
-//operador ternario ?: S PARA CONDICIONAL DOBLE CORTITO
+//operador ternario ?: S PARA CONDICIONAL DOBLE
 // (condicion logica) ? 'texto' : 'otro texto'
 
 ///     CORREGIR EN CLASE
